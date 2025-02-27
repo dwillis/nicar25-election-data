@@ -1,0 +1,84 @@
+precinct,name,address,city,zipcode
+001-001,Carroll Manor Elementary School,5624 Adamstown Rd,Adamstown,21710
+001-002,Tuscarora High School,5312 Ballenger Creek Pk,Frederick,21703
+001-003,Edward F. Fry Library at Point of Rocks,1635 Ballenger Creek Pk,Point of Rocks,21777
+002-001,Lincoln Elementary School,200 Madison St,Frederick,21701
+002-002,Lincoln Elementary School,200 Madison St,Frederick,21701
+002-003,Evangelical Lutheran Church,31 East Church St,Frederick,21701
+002-004,Hillcrest Elementary School,1285 Hillcrest Dr,Frederick,21703
+002-005,William R. Talley Recreation Center,121 North Bentz St,Frederick,21701
+002-006,Ballenger Creek Middle School,5525 Ballenger Creek Pk,Frederick,21703
+002-007,Governor Thomas Johnson Middle School,1799 Schifferstadt Blvd.,Frederick,21701
+002-008,Waverley Elementary School,201 Waverley Drive,Frederick,21702
+002-010,Monocacy Middle School,8009 Opossumtown Pk,Frederick,21702
+002-011,North Frederick Elementary School,1010 Fairview Av,Frederick,21701
+002-013,Waverley Elementary School,201 Waverley Drive,Frederick,21702
+002-014,Ballenger Creek Elementary School,5250 Kingsbrook Dr,Frederick,21703
+002-015,Monocacy Elementary School,7421 Hayward Rd,Frederick,21702
+002-016,Crestwood Middle School,7100 Foxcroft Dr,Frederick,21703
+002-017,Waverley Elementary School,201 Waverley Drive,Frederick,21702
+002-018,Governor Thomas Johnson Middle School,1799 Schifferstadt Blvd.,Frederick,21701
+003-001,Middletown Middle School,100 Martha Mason St,Middletown,21769
+003-002,Middletown Elementary School,201 East Green St,Middletown,21769
+003-003,Middletown Primary School,403 Franklin St,Middletown,21769
+004-001,Creagerstown Lutheran Church Parish Hall,8619 Blacks Mill Rd,Thurmont,21788
+005-001,Emmitsburg Elementary School,300 South Seton Av,Emmitsburg,21727
+005-002,Emmitsburg Elementary School,300 South Seton Av,Emmitsburg,21727
+006-001,Wolfsville Elementary School,12520 Wolfsville Rd,Myersville,21773
+007-001,Sugarloaf Elementary School,3400 Stone Barn Dr,Frederick,21704
+007-002,Centerville Elementary School,3601 Carriage Hill Dr,Frederick,21704
+007-003,Urbana High School,3471 Campus Dr,Ijamsville,21754
+007-004,Urbana Regional Library,9020 Amelung St,Frederick,21704
+007-005,Urbana High School,3471 Campus Dr,Ijamsville,21754
+007-007,Urbana Regional Library,9020 Amelung St,Frederick,21704
+008-001,Liberty Elementary School,11820 Liberty Rd,Frederick,21701
+009-001,New Market Middle School,125 West Main St,New Market,21774
+009-002,Green Valley Elementary School,11501 Fingerboard Rd,Monrovia,21770
+009-003,Oakdale Middle School,5810 Oakdale School Rd,Ijamsville,21754
+009-004,Kemptown Elementary School,3456 Kemptown Church Rd,Monrovia,21770
+009-005,Linganore High School,12013 Old Annapolis Rd,Frederick,21701
+009-006,Oakdale Elementary School,5830 Oakdale School Rd,Ijamsville,21754
+009-007,Deer Crossing Elementary School,10601 Finn Dr,New Market,21774
+009-008,Spring Ridge Elementary School,9051 Ridgefield Dr,Frederick,21701
+009-009,Oakdale Middle School,5810 Oakdale School Rd,Ijamsville,21754
+010-001,Sabillasville Elementary School,16210-B Sabillasville Rd,Sabillasville,21780
+010-002,Sabillasville Elementary School,16210-B Sabillasville Rd,Sabillasville,21780
+011-001,Woodsboro Elementary School,101 Liberty Rd,Woodsboro,21798
+012-001,Faith Baptist Church,2212 Jefferson Pk,Knoxville,21758
+012-002,Faith Baptist Church,2212 Jefferson Pk,Knoxville,21758
+013-001,Mt. Pleasant Ruritan Club,8101 Crum Rd,Walkersville,21793
+013-002,Mt. Pleasant Ruritan Club,8101 Crum Rd,Walkersville,21793
+013-003,Mt. Pleasant Ruritan Club,8101 Crum Rd,Walkersville,21793
+014-001,Jefferson Ruritan Community Center,4603B Lander Rd,Jefferson,21755
+014-002,Valley Elementary School,3519 Jefferson Pk,Jefferson,21755
+015-001,Thurmont Middle School,408 East Main St,Thurmont,21788
+015-002,Thurmont Primary School,7989 Rocky Ridge Rd,Thurmont,21788
+015-003,Thurmont Primary School,7989 Rocky Ridge Rd,Thurmont,21788
+016-001,Myersville Elementary School,429 Main St,Myersville,21773
+017-001,Johnsville Methodist Hall,11106 Green Valley Rd,Union Bridge,21791
+018-001,Twin Ridge Elementary School,1106 Leafy Hollow Circle,Mount Airy,21771
+018-002,Damascus Rd Community Church,12826 Old National Pk,Mount Airy,21771
+018-003,Damascus Rd Community Church,12826 Old National Pk,Mount Airy,21771
+019-001,Linganore Grange Hall,13629 Unionville Rd,Mount Airy,21771
+020-001,Lewistown Elementary School,11119 Hessong Bridge Rd,Thurmont,21788
+021-001,Brook Hill United Methodist Church,8946 Indian Springs Rd,Frederick,21702
+021-007,Brook Hill United Methodist Church,8946 Indian Springs Rd,Frederick,21702
+021-009,Brook Hill United Methodist Church,8946 Indian Springs Rd,Frederick,21702
+021-002,Whittier Elementary School,2400 Whittier Dr,Frederick,21702
+021-008,Whittier Elementary School,2400 Whittier Dr,Frederick,21702
+021-003,Yellow Springs Elementary School,8717 Yellow Springs Rd,Frederick,21702
+021-004,Yellow Springs Elementary School,8717 Yellow Springs Rd,Frederick,21702
+022-001,Burkittsville Community Center,500 East Main St,Burkittsville,21718
+022-002,Burkittsville Community Center,500 East Main St,Burkittsville,21718
+023-001,Orchard Grove Elementary School,5898 Hannover Dr,Frederick,21703
+023-002,Orchard Grove Elementary School,5898 Hannover Dr,Frederick,21703
+023-005,Orchard Grove Elementary School,5898 Hannover Dr,Frederick,21703
+024-001,The Church of the Transfiguration,6909 Maryland Av,Braddock Hts.,21714
+024-002,People's Baptist Church,6648 Carpenter Rd,Frederick,21703
+024-004,People's Baptist Church,6648 Carpenter Rd,Frederick,21703
+024-005,People's Baptist Church,6648 Carpenter Rd,Frederick,21703
+024-006,People's Baptist Church,6648 Carpenter Rd,Frederick,21703
+024-003,Braddock Heights Community Center,4830 Schley Av,Braddock Hts.,21714
+025-001,Brunswick Middle School,301 Cummings Dr,Brunswick,21716
+026-001,Walkersville Middle School,55 West Frederick St,Walkersville,21793
+026-002,Walkersville High School,81 West Frederick St,Walkersville,21793
