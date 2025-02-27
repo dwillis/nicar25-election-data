@@ -1,0 +1,70 @@
+## Ticket-Splitting
+
+```{r}
+library(tidyverse)
+library(tidycensus)
+```
+
+Ticket-splitting (voting for candidates from multiple parties) in today's political environment seems like a rarity, but it does happen, even in states like Maryland. Let's look at cast vote records from Frederick County - Maryland's most competitive county - for the 2022 general election. You'll be trying to identify the zip codes where ticket-splitting is happening the most and to learn more about those places. To do that, you'll need to read in two CSV files, join them and then also bring in data from the Census API.
+
+### Setup
+
+Load the two CSV files in the `data` folder: one containing the ballot choices of Frederick voters in five races (governor, comptroller, attorney general and U.S. House) and the other containing information about Frederick's voting locations. You'll need to join them together.
+
+```{r}
+
+frederick_cvr <- read_csv("data/frederick_cvr.csv")
+frederick_precincts <- read_csv("data/frederick_precincts.csv")
+
+joined_frederick <- frederick_cvr |> left_join(frederick_precincts, join_by(precinct)) 
+```
+
+Let's answer some basic questions about ticket-splitting: how many voters voted for different parties in the governor and comptroller's race? How many voted for the same party in both races? What percentage of all voters split their tickets in those races? In how many cases did voters choose the same party in all five contests? What percentage of all voters does that represent?
+
+11,871 Frederick voters, or 11 percent, split their tickets in the race. 89,916 voters, or nearly 84 percent, voted for the same way in all five races.
+
+```{r}
+joined_frederick |> filter(governor_lt_governor != comptroller) |> count()
+joined_frederick |> filter(governor_lt_governor == comptroller) |> count()
+pct <- 11871/107302 * 100
+
+joined_frederick |> filter(governor_lt_governor == comptroller, governor_lt_governor == attorney_general, governor_lt_governor == u_s_senator, governor_lt_governor == representative_in_congress_6) |> count()
+
+89916/107302 *100
+
+```
+
+Now let's look for the zip codes where voters preferred Republicans in every race _except_ the governor's race, where Dan Cox lost to Wes Moore by a wide margin. Write code to generate a dataframe of zip codes with the number of those voters for each of those zip codes, ordering the dataframe so that the zip code with the most ticket-splitters appears first.
+
+There are 23 zip codes in the county that had loyal Republicans who did not support Cox. 21702 had the most with 243.
+
+```{r}
+rep_no_cox_zips <- joined_frederick |> 
+  filter(governor_lt_governor != 'REP', comptroller == 'REP', attorney_general == 'REP', u_s_senator == 'REP', representative_in_congress_6 == 'REP') |> 
+  group_by(zipcode) |> 
+  summarize(voters = n()) |> 
+  arrange(desc(voters))
+```
+
+
+Let's find out more about those zip codes. Using tidycensus, get a dataframe of Maryland zip codes and their median ages, then join it to the dataframe you produced in A4. NOTE: you'll need to ensure that the two columns you use for the join are the same datatype. Summarize your findings; how would you describe the zip codes with more non-Cox Republicans compared to those with fewer? Where are those leading zip codes located?
+
+The zip codes with the most non-Cox Republicans appear to have lower median ages than those with fewer such voters, although the difference isn't enormous. The top zip codes are centered in or just outside the city of Frederick.
+
+```{r}
+# get the zips with median income
+md_zips <- get_acs(geography = "zcta",
+              variables = ("B01002_001"),
+              state = "MD",
+              year = 2019)
+
+# setup the join
+
+rep_no_cox_zips <- rep_no_cox_zips |> 
+  mutate(zipcode = as.character(zipcode))
+
+# do the join
+
+rep_no_cox_zips |> inner_join(md_zips, join_by(zipcode==GEOID))
+
+```
