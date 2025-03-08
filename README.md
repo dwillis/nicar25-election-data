@@ -19,9 +19,10 @@
 * Split tickets
 * Polarization at the very local level
 * Who didn't vote
+* Provisinal votes
 
 ### Looking Ahead
 
 * Changes in voter registration
 * Turnout in local elections
-* Measuring ideology
+* Measuring [ideology](https://data.stanford.edu/dime)
